@@ -1,10 +1,38 @@
 
 header {
-  height: 40%;
+  height: 30%;
 
   /* Center and scale the image nicely */
   background-image: url('../images/background.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  padding: 20px;
+
+  %page-title {
+    font-family: 'League Gothic';
+    //color: $header-title;
+    color: #c4aa00;
+  }
+
+  h1 {
+    @extend %page-title;
+    font-size: 8em;
+
+  }
+
+  h2 {
+    @extend %page-title;
+    font-size: 4em;
+    margin: 20px 0;
+  }
+
+  .wrapper {
+    //background-color: #000;
+
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 5%;
+  }
 }

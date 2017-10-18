@@ -1,5 +1,6 @@
 /* Fonts stack */
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import '../fonts/font-stack.css';
 
-$font-stack: 'Source Sans Pro', sans-serif;
+$font-stack: 'Source Sans Pro', 'League Gothic', 'League Gothic Condensed', sans-serif;
