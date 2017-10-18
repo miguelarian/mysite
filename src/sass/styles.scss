@@ -1,5 +1,5 @@
-
-body {
-   background-image: url('../images/background.jpg');
-   color: black;
-}
+@import "reset.scss";
+@import "colors.scss";
+@import "fonts.scss";
+@import "common.scss";
+@import "index.scss";
