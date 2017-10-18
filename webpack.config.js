@@ -1,14 +1,21 @@
 const path = require('path');
 const webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+
+var entryPathJavascript = './src/js/index.js'
+var entryPathSass = './src/sass/styles.scss'
 
 module.exports = {
 
-  entry: './src/js/index.js',
+  entry: [
+      entryPathJavascript,
+      entryPathSass
+    ],
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: path.resolve(__dirname, 'src'),
     hot: true
   },
 
@@ -17,6 +24,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([
       { from: './src/index.html' },
+      { from: './src/error.html' },
       {
         from: './src/icons',
         to: 'icons'
@@ -91,7 +99,7 @@ module.exports = {
           }
         }]
       },
-      { test: /(images).*(woff2?|ttf|eot|svg|png)$/,
+      { test: /(images).*(woff2?|ttf|eot|svg|png|jpg)$/,
         use: [{
           loader: 'file-loader',
           options: {

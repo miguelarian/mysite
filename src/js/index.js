@@ -1,6 +1,5 @@
-import '../styles/styles.css';
+/* global $ */
 var $ = require("jquery");
-
 
 $(document).ready(function ()
 {
