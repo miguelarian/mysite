@@ -1,0 +1,36 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open --hotOnly",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelarian/www.miguelvela.es"
+  },
+  "author": "Miguel Vela Romera",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "bootstrap-loader": "^2.1.0",
+    "bootstrap-sass": "^3.3.7",
+    "sass-loader": "^6.0.6",
+    "node-sass": "^4.5.3",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
+    "expose-loader": "^0.7.3",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4"
+  }
+}
