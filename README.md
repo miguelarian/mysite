@@ -1,5 +1,6 @@
 # miguelvela.es
 This is my personal website.
 
-Feel free to send me an email for further contact.
- 
+This is a single page application written in HTML 5, JavaScript and CSS.
+
+Feel free to contact for further details.
